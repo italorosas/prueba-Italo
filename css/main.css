@@ -1,0 +1,320 @@
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    width:100%;
+    max-width: 1024px;
+    margin:5px auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+nav > *{
+    display:inline-block;
+}
+nav ul{
+    border:2px solid #333;
+    width:75%;
+    padding:0;
+    font-size: 0;
+    margin-right:4%;
+}
+nav > ul li{
+    display:inline-block;
+    width:20%;
+    text-align: center;
+    border-left: 2px solid rgba(0,0,0,0);
+    border-right: 2px solid rgba(0,0,0,0);
+    transition: all ease .6s;
+    box-sizing: border-box;
+    position:relative;
+}
+nav ul li:hover{
+    background:#ccc;
+}
+nav > ul > li:hover{
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+    transition: all ease .6s;    
+}
+.submenu{
+    background:#fff;
+    box-shadow: #555 0 0 6px;
+    position:absolute;
+    width:120px;
+    margin:20px auto;
+    left:0;
+    right:0;
+    border:0;
+    display: none;
+    z-index: 1;
+}
+.submenu.active{
+    display: block;
+}
+.submenu li{
+    width:100%;
+}
+nav ul li:first-child{
+    border-left-color: rgba(0,0,0,0);
+}
+nav ul li:last-child{
+    border-right-color: rgba(0,0,0,0);
+}
+nav ul li a{
+    font-size:14px;
+    color:#333;
+    line-height: 40px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+nav .search-ctn{
+    width:20%;
+    position: relative;
+    transition: none;
+}
+
+nav .search-ctn i.fa-close{
+    display: none;
+}
+nav .search-ctn.active{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #5a75d1;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 100;
+    text-align: center;
+    transition: all ease .6s;
+}
+nav .search-ctn.active input{
+    background: none;
+    border: 0;
+    border-bottom: 5px solid #fff;
+    font-size: 72px;
+    color: #fff;
+    width: 94%;
+    margin: 40px auto;
+    border-radius: 0;
+}
+nav .search-ctn.active i.fa-close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color:#fff;
+    cursor:pointer;
+    left:auto;
+    display: inline-block;
+}
+nav .search-ctn.active i.fa-search{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #555;
+    right: 0;
+    font-size: 145px;
+    color: #fff;
+    cursor: pointer;
+}
+nav .search-ctn i{
+    position: absolute;
+    top:6px;
+    left:7px;
+    color:#555;
+}
+nav input{
+    border-radius:30px;
+    padding: 4px 7px 4px 28px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.slider-ctn{
+    position:relative;
+    margin-top:20px;
+}
+.slider-ctn .slide{
+    top:0;
+    left:0;
+    width:100%;
+    opacity: 0;
+    display: none;
+    transition: all ease .6s;
+}
+.slider-ctn .slide.active{
+    opacity: 1;
+    display: block;
+    transition: all ease .6s;
+}
+
+.slider-ctn .slide img{
+    width:100%;
+}
+.slider-nav{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.slider-nav a{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #5499de;
+    color:#5499de;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0 4px;
+    font-size: 22px;
+    line-height: 26px;
+    vertical-align: top;
+}
+.slider-nav a i{
+    display: none;
+}
+.slider-nav a.active i{
+    display: inline-block;
+}
+.slider-arrows{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    font-size:30px;
+}
+.slider-arrows a{
+    color:#333;
+}
+.btn-next{
+    right:10px;
+    position: absolute;
+}
+.btn-back{
+    left:10px;
+    position: absolute;
+}
+
+.posts{
+    text-align: center;
+    margin-top:20px;
+}
+
+.posts article{
+    width: 30%;
+    margin: 0 1%;
+    display: inline-block;
+    border:1px solid #333;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form{
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-form .form-wrapper{
+    margin-top:10px;
+    display: inline-block;
+    width: 90%;
+    max-width: 300px;
+}
+h2{
+    text-align: left;
+}
+.form-ctn{
+    font-size: 0;
+}
+.form-ctn input, .form-ctn textarea, .form-ctn label, .form-ctn a{
+    border: 1px solid #333;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form-ctn input{
+    height: 40px;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    width: 86%;
+}
+.form-ctn label{
+    width: 14%;
+    height: 40px;
+    background: #ddd;
+    border-radius: 4px 0 0 4px;
+    display: inline-block;
+    border-right: 0;
+    font-size: 20px;
+    line-height: 40px;
+}
+.form-ctn textarea{
+    width: 100%;
+    min-height: 120px;
+    border-radius:4px;
+    padding: 6px 8px;
+}
+.form-ctn .btn-send{
+    padding: 8px 12px;
+    background: #ddd;
+    border:1px solid #333;
+    display: inline-block;
+    border-radius: 8px;
+    color: #333;
+    width: 120px;
+    transition: all ease .6s;
+}
+.form-ctn .btn-send:hover{
+    background:#aaa;
+    transition: all ease .6s;
+}
+.form-wrapper .form-ctn{
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+.form-ctn .parsley-errors-list{
+    font-size: 14px;
+    text-align: left;
+    margin-top:5px;
+    color:red;
+}
+.fa-bars{
+    display: none;
+}
+@media (max-width: 600px) {
+  header .fa-bars{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+  }
+  nav ul{
+      width: 100%;
+  }
+  nav ul li{
+      width: 100%;
+  }
+  .submenu{
+      position: relative;
+      width: 100%;
+  }
+  nav > ul > li:hover{
+      border:0; 
+  }
+  nav .search-ctn{
+      width: 100%;
+      margin-top:10px;
+  }
+  h2{
+      margin-bottom:0;
+  }
+  .posts article{
+      width: 100%;
+      margin-bottom:10px;
+  }
+}

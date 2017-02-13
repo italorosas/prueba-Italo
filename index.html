@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba - Italo Rosas</title>
+    <link rel="stylesheet" href="css/libs/normalizer.min.css">
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="css/libs/parsley.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fa fa-bars"></i>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="javascript:;">Apps</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Games</a>
+                        <ul class="submenu">
+                            <li> 
+                                <a href="javascript:;">All</a>
+                            </li>
+                            <li> 
+                                <a href="javascript:;">Deals</a>
+                            </li>
+                            <li> 
+                                <a href="javascript:;">Packs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Movies</a>
+                        <ul class="submenu">
+                            <li> 
+                                <a href="javascript:;" >All</a>
+                            </li>
+                            <li> 
+                                <a href="javascript:;" >Dialed</a>
+                            </li>
+                            <li> 
+                                <a href="javascript:;" >Favorites</a>
+                            </li>
+                            <li> 
+                                <a href="javascript:;" >Groups</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Books</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Newspapers</a>
+                    </li>
+                </ul>
+                <div class="search-ctn">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                    <i class="fa fa-close"></i>
+                </div>
+            </nav>
+        </header>
+        <section class="slider-ctn">
+            <div class="slider-arrows">
+                <a href="javascript:;" class="btn-back">
+                    <i class="fa fa-chevron-left"></i>
+                </a>
+                <a href="javascript:;" class="btn-next">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+            <div class="slider-nav">
+            </div>
+        </section>
+        <section class="posts">
+            <article> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, nibh id vehicula hendrerit, felis nibh consectetur lorem, non elementum sapien ligula vel mi. Curabitur aliquet condimentum libero, quis consectetur massa volutpat at. Aenean vel ante justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel feugiat lorem. Donec varius cursus dui. In placerat tortor vitae lorem sodales cursus. Vivamus vel pretium libero. Fusce id ornare augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis ultrices massa sollicitudin bibendum.
+            </article>
+            <article> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, nibh id vehicula hendrerit, felis nibh consectetur lorem, non elementum sapien ligula vel mi. Curabitur aliquet condimentum libero, quis consectetur massa volutpat at. Aenean vel ante justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel feugiat lorem. Donec varius cursus dui. In placerat tortor vitae lorem sodales cursus. Vivamus vel pretium libero. Fusce id ornare augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis ultrices massa sollicitudin bibendum.
+            </article>
+            <article> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, nibh id vehicula hendrerit, felis nibh consectetur lorem, non elementum sapien ligula vel mi. Curabitur aliquet condimentum libero, quis consectetur massa volutpat at. Aenean vel ante justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel feugiat lorem. Donec varius cursus dui. In placerat tortor vitae lorem sodales cursus. Vivamus vel pretium libero. Fusce id ornare augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer mollis ultrices massa sollicitudin bibendum.
+            </article>
+        </section>
+        <section class="contact-form">
+            <h2>Formulario</h2>
+            <div class="form-wrapper">
+                <form id="contact-form">
+                    <div class="form-ctn"> 
+                        <label for="username">
+                            <i class='fa fa-user'></i>
+                        </label>
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="form-ctn"> 
+                        <label for="email">
+                            <i class="fa fa-envelope-o"></i>
+                        </label>
+                        <input type="text" name="email" placeholder="Email" required minlength="4" data-parsley-type="email">
+                    </div>
+                    <div class="form-ctn"> 
+                        <label for="password">
+                            <i class="fa fa-asterisk"></i>
+                        </label>
+                        <input type="password" name="password" placeholder="Password" required minlength="4">
+                    </div>
+                    <div class="form-ctn"> 
+                        <textarea name="description" placeholder="Write your message" cols="30" rows="10" required data-parsley-pattern="(?!^(carajo|joder|ctm|hdp)$).*"></textarea>
+                    </div>
+                    <div class="form-ctn">
+                        <a href="javascript:;" class="btn-send"> Button </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/parsleyjs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
